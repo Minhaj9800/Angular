@@ -36,7 +36,7 @@ export class ServersComponent implements OnInit {
   }
 
   outputServerName(event:Event) {
-    this.serverName = (<HTMLInputElement>event.target).value
+    this.serverName = (<HTMLInputElement>event.target).value;
     //console.log(event);
   }
 
