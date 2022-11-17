@@ -24,15 +24,16 @@
 <!--Replacing string interpolation with property binding-->
 <p [innerText]="allowNewServer"></p>
 <hr>
-<div>
-  <button class="btn btn-warning" 
-  [disabled]="!isEmpty"
-  (click)="onClickAction()"
-  >
-  Click</button>
-  <p>{{isEmpty}}</p>
+
+<!--Assignment-2: Practising Data binding-->
+<input type="text" class="form-control" [(ngModel)]="username">
 <p>{{username}}</p>
-</div>
+
+<button type="button" class="btn btn-danger" 
+[disabled]="!isEmpty"
+(click)="onClickAction()"
+>Empty</button>
+
 
 <!-- <p>{{allowNewServer}}</p> -->
 <!--Using property Binding-->

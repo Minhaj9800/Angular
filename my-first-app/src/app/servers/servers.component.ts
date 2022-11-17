@@ -17,7 +17,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No server was created';
   serverName = 'TestServer';
   isEmpty = false;
-  username = 'TestUser';
+  username = '';
 
   constructor() {
     setTimeout(() => {
@@ -41,8 +41,6 @@ export class ServersComponent implements OnInit {
   }
 
   onClickAction() {
-    if (this.username !== '') {
-      this.username = '';
-    }
+    this.username = '';
   }
 }
