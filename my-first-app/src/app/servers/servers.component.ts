@@ -39,3 +39,18 @@ export class ServersComponent implements OnInit {
     this.username = '';
   }
 }
+
+// NOTE (DIRECTIVES):
+// Directives are the instructions in the DOM.Components
+// are such instructions in DOM. Once we place the selector of our component
+// somewhere in our templates, at this point of time we are instructing angular
+// to add the content of our component template, and the business logic in our
+// types of code in this place where we place the selector.
+// [Angular please add our component at this place].
+// Components are directives with template
+// There are directives without template
+// We typically add directive with attribute selector
+// But technically selector of directive can be 
+// configured just like the selector of component.
+// So you could use css classes or the element style.
+// but again typically you use the attribute style.
