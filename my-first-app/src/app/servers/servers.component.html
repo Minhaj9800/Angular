@@ -38,6 +38,10 @@
 <!-- <p>{{allowNewServer}}</p> -->
 <!--Using property Binding-->
 <!-- <p [innerText]="allowNewServer"></p> -->
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<!-- *ngIf started with * as it is structural directive
+ which means it changes the structure of our DOM
+It either adds this element or it does not-->
+<p *ngIf="serverCreated">Server was created, and server name is: {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
