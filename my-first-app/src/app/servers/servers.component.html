@@ -30,7 +30,7 @@
 <p>{{username}}</p>
 
 <button type="button" class="btn btn-danger" 
-[disabled]="!isEmpty"
+[disabled]="username === ''"
 (click)="onClickAction()"
 >Empty</button>
 
