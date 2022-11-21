@@ -13,9 +13,9 @@ import { Component } from '@angular/core';
     `,
 
     `
-      app-servers {
-        color: red;
-      }
+      /* app-servers {
+        color: white;
+      } */
     `,
   ],
 })
