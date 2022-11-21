@@ -8,4 +8,11 @@ Could use Terinary operator
 Have to get a string at the end
 or get something which can be converted to a string-->
 <!--Calling function in string interpolation-->
-<p>{{'Server'}} with ID {{serverId}} is {{getServerStatus()}}.</p>
+<p [ngStyle]="{backgroundColor:getColor()}">{{'Server'}} with ID {{serverId}} is {{getServerStatus()}}.</p>
+<!-- [] is not part of the directive name(ngStyle)
+the directive name is just ngStyle
+the square bracket indicate we want to 
+bind to some property on this directive
+and this property name happens to also be ngStyle
+we are binding to a property of the directive
+this ngStyle property expect to get JavaScript Object-->
