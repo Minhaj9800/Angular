@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   //using inline template
   // template: `<app-server></app-server>
   // <app-server></app-server>`,
-  templateUrl:'./servers.component.html',
+  templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css'],
 })
 export class ServersComponent implements OnInit {
@@ -20,6 +20,8 @@ export class ServersComponent implements OnInit {
   serverCreated = false;
   servers = ['Testserver', 'Testserver2']
   isClicked = false;
+  logArray = [];
+  increment = 1;
 
   constructor() {
     setTimeout(() => {
@@ -32,10 +34,10 @@ export class ServersComponent implements OnInit {
   onCreateServer() {
     this.serverCreated = true;
     this.servers.push(this.serverName);
-    this.serverCreationStatus = 'Server was created! Name is '+this.serverName;
+    this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 
-  outputServerName(event:Event) {
+  outputServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
     //console.log(event);
   }
@@ -45,7 +47,12 @@ export class ServersComponent implements OnInit {
   }
 
   toggleDisplay() {
+    this.logArray.push(this.increment++);
     (this.isClicked) == false ? this.isClicked = true : this.isClicked = false;
+  }
+
+  elementColor(value: any) {
+    if (value >= 5) return 'blue';
   }
 }
 

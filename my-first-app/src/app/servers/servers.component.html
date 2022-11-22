@@ -40,6 +40,12 @@
 >Display Details</button>
 <p *ngIf="isClicked">A little secret to share in details</p>
 
+<div *ngFor="let arr of logArray" 
+[ngStyle]="{backgroundColor:elementColor(arr)}"
+[ngClass]="{textColor: arr>= 5}">
+  {{arr}}
+</div>
+
 
 <!-- <p>{{allowNewServer}}</p> -->
 <!--Using property Binding-->
