@@ -48,8 +48,9 @@ It either adds this element or it does not-->
 <ng-template #noServer>
  <p>No server was created!</p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers">
+  
+</app-server>
 
 <!-- ngIf is structural directive and other directives are 
 attribute directives, they do not or remove elements
