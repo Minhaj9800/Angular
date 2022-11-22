@@ -18,7 +18,8 @@ export class ServersComponent implements OnInit {
   serverName = 'TestServer';
   username = 'TestUser';
   serverCreated = false;
-  servers = ['Testserver','Testserver2']
+  servers = ['Testserver', 'Testserver2']
+  isClicked = false;
 
   constructor() {
     setTimeout(() => {
@@ -41,6 +42,10 @@ export class ServersComponent implements OnInit {
 
   onClickAction() {
     this.username = '';
+  }
+
+  toggleDisplay() {
+    (this.isClicked) == false ? this.isClicked = true : this.isClicked = false;
   }
 }
 

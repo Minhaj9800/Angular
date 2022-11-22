@@ -33,6 +33,12 @@
 [disabled]="username === ''"
 (click)="onClickAction()"
 >Empty</button>
+<br>
+<!--Assignment 3:Practicing Directive -->
+
+<button type="button" class="btn btn-warning space" (click) = "toggleDisplay()"
+>Display Details</button>
+<p *ngIf="isClicked">A little secret to share in details</p>
 
 
 <!-- <p>{{allowNewServer}}</p> -->
@@ -49,7 +55,7 @@ It either adds this element or it does not-->
  <p>No server was created!</p>
 </ng-template>
 <app-server *ngFor="let server of servers">
-  
+
 </app-server>
 
 <!-- ngIf is structural directive and other directives are 
