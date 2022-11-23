@@ -40,9 +40,9 @@
 >Display Details</button>
 <p *ngIf="isClicked">A little secret to share in details</p>
 
-<div *ngFor="let arr of logArray" 
-[ngStyle]="{backgroundColor:elementColor(arr)}"
-[ngClass]="{textColor: arr>= 5}">
+<div *ngFor="let arr of logArray; let i = index" 
+[ngStyle]="{backgroundColor:elementColor(i)}"
+[ngClass]="{textColor: i >= 4}">
   {{arr}}
 </div>
 

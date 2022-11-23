@@ -47,7 +47,8 @@ export class ServersComponent implements OnInit {
   }
 
   toggleDisplay() {
-    this.logArray.push(this.increment++);
+    //this.logArray.push(this.increment++);
+    this.logArray.push(new Date());
     (this.isClicked) == false ? this.isClicked = true : this.isClicked = false;
   }
 
