@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipies.component.css'],
 })
 export class RecipiesComponent implements OnInit {
-  recipies = [];
-
   constructor() {}
 
   ngOnInit(): void {}
