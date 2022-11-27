@@ -11,7 +11,13 @@ export class RecipieListComponent implements OnInit {
     new Recipie(
       'A test recipie',
       'This is simply a test',
-      'https://www.cookipedia.co.uk/wiki/images/4/47/Marmitako_%282%29_recipe.jpg'
+      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'
+    ),
+
+    new Recipie(
+      'A test recipie',
+      'This is simply a test',
+      'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'
     ),
   ];
   constructor() {}
